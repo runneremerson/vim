@@ -449,6 +449,8 @@ Bundle 'The-NERD-Commenter'
 "django
 Bundle 'django_templates.vim'
 Bundle 'Django-Projects'
+"golang
+Bundle 'fatih/vim-go'
 
 "Bundle 'FredKSchott/CoVim'
 "Bundle 'djangojump'
