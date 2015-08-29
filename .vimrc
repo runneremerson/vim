@@ -9,6 +9,7 @@ set sm
 set selection=inclusive
 set wildmenu
 set mousemodel=popup
+set pastetoggle=<C-H>
 
 au FileType php setlocal dict+=~/.vim/dict/php_funclist.dict
 au FileType css setlocal dict+=~/.vim/dict/css.dict
