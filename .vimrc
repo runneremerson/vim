@@ -185,7 +185,7 @@ imap <C-v> <Esc>"*pa
 imap <C-a> <Esc>^
 imap <C-e> <Esc>$
 vmap <C-c> "+y
-set mouse=v
+set mouse=r
 "set clipboard=unnamed
 "去空行  
 nnoremap <F2> :g/^\s*$/d<CR> 
