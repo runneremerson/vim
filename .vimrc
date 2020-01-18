@@ -10,7 +10,6 @@ set selection=inclusive
 set wildmenu
 set mousemodel=popup
 set pastetoggle=<C-H>
-
 au FileType php setlocal dict+=~/.vim/dict/php_funclist.dict
 au FileType css setlocal dict+=~/.vim/dict/css.dict
 au FileType c setlocal dict+=~/.vim/dict/c.dict
@@ -322,7 +321,6 @@ set backspace=2
 " 允许backspace和光标键跨越行边界
 set whichwrap+=<,>,h,l
 " 可以在buffer的任何地方使用鼠标（类似office中在工作区双击鼠标定位）
-set mouse=a
 set selection=exclusive
 set selectmode=mouse,key
 " 通过使用: commands命令，告诉我们文件的哪一行被改变过
@@ -473,3 +471,7 @@ let g:ctrlp_custom_ignore = '\v\.(exe|so|dll)$'
 let g:ctrlp_extensions = ['funky']
 
 let NERDTreeIgnore=['\.pyc']
+
+if has('mouse')
+    set mouse-=a
+endif
